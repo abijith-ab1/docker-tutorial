@@ -116,7 +116,7 @@ if ENVIRONMENT == "development":
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'postgres',
             'USER': 'postgres',
-            'PASSWORD': 'zigroo2002',
+            'PASSWORD': env('DB_PASSWORD'),
             'HOST': 'postgres',
             'PORT': 5432,
         }
